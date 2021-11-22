@@ -14,5 +14,7 @@ public class Personas{
         return personas.add(persona);
     }
 
-    
+    public void removerPersona(int id){
+        personas.remove(id);
+    }
 }
