@@ -17,4 +17,20 @@ public class Personas{
     public void removerPersona(int id){
         personas.remove(id);
     }
+
+    public void editarNombre(int id, String nombre){
+        personas.get(id).setNombre(nombre);
+    }
+
+    public void editarApellidos(int id, String apellidos){
+        personas.get(id).setApellidos(apellidos);
+    }
+
+    public void editarEdad(int id, int edad){
+        personas.get(id).setEdad(edad);
+    }
+
+    public Persona getPersona(int id){
+        return personas.get(id);
+    }
 }
